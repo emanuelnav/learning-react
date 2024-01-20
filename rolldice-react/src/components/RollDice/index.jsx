@@ -18,10 +18,10 @@ function RollDice() {
 
   return (
     <div>
-      <Die value= { die1 }/>
-      <Die value= { die2 }/>
+      <Die value= {die1}/>
+      <Die value= {die2}/>
 
-      <button onClick={() => setDiceValues()}>
+      <button onClick={() => setDiceValues()} disabled={isRolling}>
         { isRolling ? 'Rolling...': 'Roll Dice!'}
       </button>
     </div>
